@@ -1,0 +1,12 @@
+# The study app rebuilds this from data/content.json.
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+data/*.tmp
+
+__pycache__/
+*.pyc
+
+# Local copies of course videos. The notes are in data/content.json.
+transcripts/
