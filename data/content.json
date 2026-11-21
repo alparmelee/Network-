@@ -5455,6 +5455,1545 @@
           ]
         }
       ]
+    },
+    {
+      "id": 6,
+      "number": 6,
+      "title": "Acronyms",
+      "summary": "One page for the acronyms used in these notes.",
+      "exam_percent": null,
+      "sort_order": 5,
+      "sections": [
+        {
+          "id": 26,
+          "chapter_id": 6,
+          "code": "6.1",
+          "title": "Acronyms",
+          "summary": "Each term is the acronym. The notes say what it stands for and how it is used.",
+          "sort_order": 0,
+          "categories": [
+            {
+              "id": 126,
+              "section_id": 26,
+              "name": "A",
+              "summary": "",
+              "sort_order": 0,
+              "parent_id": null
+            },
+            {
+              "id": 127,
+              "section_id": 26,
+              "name": "B",
+              "summary": "",
+              "sort_order": 1,
+              "parent_id": null
+            },
+            {
+              "id": 128,
+              "section_id": 26,
+              "name": "C",
+              "summary": "",
+              "sort_order": 2,
+              "parent_id": null
+            },
+            {
+              "id": 129,
+              "section_id": 26,
+              "name": "D",
+              "summary": "",
+              "sort_order": 3,
+              "parent_id": null
+            },
+            {
+              "id": 130,
+              "section_id": 26,
+              "name": "E",
+              "summary": "",
+              "sort_order": 4,
+              "parent_id": null
+            },
+            {
+              "id": 131,
+              "section_id": 26,
+              "name": "F",
+              "summary": "",
+              "sort_order": 5,
+              "parent_id": null
+            },
+            {
+              "id": 132,
+              "section_id": 26,
+              "name": "G",
+              "summary": "",
+              "sort_order": 6,
+              "parent_id": null
+            },
+            {
+              "id": 133,
+              "section_id": 26,
+              "name": "H",
+              "summary": "",
+              "sort_order": 7,
+              "parent_id": null
+            },
+            {
+              "id": 134,
+              "section_id": 26,
+              "name": "I",
+              "summary": "",
+              "sort_order": 8,
+              "parent_id": null
+            },
+            {
+              "id": 135,
+              "section_id": 26,
+              "name": "L",
+              "summary": "",
+              "sort_order": 9,
+              "parent_id": null
+            },
+            {
+              "id": 136,
+              "section_id": 26,
+              "name": "M",
+              "summary": "",
+              "sort_order": 10,
+              "parent_id": null
+            },
+            {
+              "id": 137,
+              "section_id": 26,
+              "name": "N",
+              "summary": "",
+              "sort_order": 11,
+              "parent_id": null
+            },
+            {
+              "id": 138,
+              "section_id": 26,
+              "name": "O",
+              "summary": "",
+              "sort_order": 12,
+              "parent_id": null
+            },
+            {
+              "id": 139,
+              "section_id": 26,
+              "name": "P",
+              "summary": "",
+              "sort_order": 13,
+              "parent_id": null
+            },
+            {
+              "id": 140,
+              "section_id": 26,
+              "name": "Q",
+              "summary": "",
+              "sort_order": 14,
+              "parent_id": null
+            },
+            {
+              "id": 141,
+              "section_id": 26,
+              "name": "R",
+              "summary": "",
+              "sort_order": 15,
+              "parent_id": null
+            },
+            {
+              "id": 142,
+              "section_id": 26,
+              "name": "S",
+              "summary": "",
+              "sort_order": 16,
+              "parent_id": null
+            },
+            {
+              "id": 143,
+              "section_id": 26,
+              "name": "T",
+              "summary": "",
+              "sort_order": 17,
+              "parent_id": null
+            },
+            {
+              "id": 144,
+              "section_id": 26,
+              "name": "U",
+              "summary": "",
+              "sort_order": 18,
+              "parent_id": null
+            },
+            {
+              "id": 145,
+              "section_id": 26,
+              "name": "V",
+              "summary": "",
+              "sort_order": 19,
+              "parent_id": null
+            },
+            {
+              "id": 146,
+              "section_id": 26,
+              "name": "W",
+              "summary": "",
+              "sort_order": 20,
+              "parent_id": null
+            },
+            {
+              "id": 147,
+              "section_id": 26,
+              "name": "X",
+              "summary": "",
+              "sort_order": 21,
+              "parent_id": null
+            }
+          ],
+          "terms": [
+            {
+              "id": 460,
+              "section_id": 26,
+              "name": "A",
+              "definition": "**Address.**\n\nMaps a hostname to an IPv4 address.",
+              "image_url": "https://easydmarc.com/blog/wp-content/uploads/2022/08/A-Record-vs-AAAA-Record-1.jpg",
+              "sort_order": 0,
+              "category_id": 126
+            },
+            {
+              "id": 461,
+              "section_id": 26,
+              "name": "AAAA",
+              "definition": "**Quad A.**\n\nMaps a hostname to an IPv6 address",
+              "image_url": "https://easydmarc.com/blog/wp-content/uploads/2022/08/A-Record-vs-AAAA-Record-1.jpg",
+              "sort_order": 1,
+              "category_id": 126
+            },
+            {
+              "id": 462,
+              "section_id": 26,
+              "name": "ACL",
+              "definition": "**Access Control List.**\n\nA rule set utilized by firewalls, routers, and operating systems to permit or deny traffic based on source/destination IP addresses, port numbers, applications, or time of day. Firewalls process rules from top to bottom, applying an implicit deny to any traffic that fails to match a specified rule.",
+              "image_url": "https://networkwalks.com/wp-content/uploads/2022/03/acl-access-control-lists-2.jpg",
+              "sort_order": 2,
+              "category_id": 126
+            },
+            {
+              "id": 463,
+              "section_id": 26,
+              "name": "AH",
+              "definition": "**Authentication Header.**\n\nProvides data integrity and digital signatures via hashing, though data is sent in the clear.",
+              "image_url": "https://www.shutterstock.com/image-illustration/ah-authentication-headerahauthentication-header-acronym-260nw-2586639579.jpg",
+              "sort_order": 3,
+              "category_id": 126
+            },
+            {
+              "id": 464,
+              "section_id": 26,
+              "name": "AP",
+              "definition": "**Access Point.**\n\n**Mechanism**: An unauthorized wireless access point or software-shared hotspot is connected to the network environment.  \n\n**Impact**: Creates severe security vulnerabilities, allowing unauthorized users to bypass network perimeter controls and access internal resources.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4yDuSLeuWxusiFQvjYARoobWxPTOHwCoZJv3n00MhgiuQ6TPtfXK5Z3A&s=10",
+              "sort_order": 4,
+              "category_id": 126
+            },
+            {
+              "id": 465,
+              "section_id": 26,
+              "name": "API",
+              "definition": "**Application Programming Interface.**\n\nA programmatic method that allows scripts and central management systems to communicate directly with devices in their native language to automate configurations and manage large fleets of devices.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFHYLVSJEOzCKxJCojAa2x5AovkxsRds-97917Pq5zvMzGBo5p1NzsPw0&s=10",
+              "sort_order": 5,
+              "category_id": 126
+            },
+            {
+              "id": 466,
+              "section_id": 26,
+              "name": "APIPA",
+              "definition": "**Automatic Private IP Addressing.**\n\nRange: 169.254.0.1 through 169.254.255.254 (with usable endpoints assigned dynamically between 169.254.1.0 and 169.254.254.255).\n\nAutomatically assigns a link-local address to a device when it cannot reach a DHCP server. These addresses are restricted to the local subnet and cannot communicate across routers or access the internet.",
+              "image_url": "https://ipcisco.com/wp-content/uploads/2023/04/apipa-address-range-ipcisco.com_.jpg",
+              "sort_order": 6,
+              "category_id": 126
+            },
+            {
+              "id": 467,
+              "section_id": 26,
+              "name": "BGP",
+              "definition": "**Border Gateway Protocol.**\n\nAn exterior gateway protocol designed to route traffic between different autonomous systems across wide area networks and the public internet.",
+              "image_url": "https://www.cloudns.net/blog/wp-content/uploads/2024/08/BGP-ClouDNS-1024x576.png",
+              "sort_order": 7,
+              "category_id": 127
+            },
+            {
+              "id": 468,
+              "section_id": 26,
+              "name": "BNC",
+              "definition": "**Bayonet Neill Concelman.**\n\nA push-and-twist locking coaxial connector named after Paul Neil and Carl Concelman.",
+              "image_url": "https://tejte.com/wp-content/uploads/2025/08/F-vs-bnc-connector-comparison.webp",
+              "sort_order": 8,
+              "category_id": 127
+            },
+            {
+              "id": 469,
+              "section_id": 26,
+              "name": "BSSID",
+              "definition": "**Basic Service Set Identifier.**\n\nThe unique hardware MAC address of a specific wireless access point interface.",
+              "image_url": "https://www.shutterstock.com/image-illustration/bssid-meaning-basic-service-set-260nw-2669239085.jpg",
+              "sort_order": 9,
+              "category_id": 127
+            },
+            {
+              "id": 470,
+              "section_id": 26,
+              "name": "BYOD",
+              "definition": "**Bring Your Own Device.**\n\nSegmenting personal employee devices so that corporate data remains secure and centrally manageable while personal user data remains entirely private.",
+              "image_url": "https://www.cynergytech.com/wp-content/uploads/2025/09/BYOD-1080x675.jpg",
+              "sort_order": 10,
+              "category_id": 127
+            },
+            {
+              "id": 471,
+              "section_id": 26,
+              "name": "CCTV",
+              "definition": "Closed-circuit television systems deployed to monitor facilities, detect motion, record historical video feeds, read license plates, or perform facial recognition.",
+              "image_url": "https://cdn4.volusion.store/not95-tcan2/v/vspfiles/photos/HD-Q7-2.jpg?v-cache=1774443801",
+              "sort_order": 11,
+              "category_id": 128
+            },
+            {
+              "id": 472,
+              "section_id": 26,
+              "name": "CDN",
+              "definition": "**Content delivery network.**\n\n**Content Delivery Network (CDN)**: A geographically distributed network of proxy servers and data centers.",
+              "image_url": "https://media.geeksforgeeks.org/wp-content/uploads/20260114170023021350/_content_delivery_network.webp",
+              "sort_order": 12,
+              "category_id": 128
+            },
+            {
+              "id": 473,
+              "section_id": 26,
+              "name": "CDP",
+              "definition": "**Cisco Discovery Protocol.**\n\nProtocols used to automatically gather switch configuration details, native VLANs, and port information without needing to log directly into the device (LLDP is vendor-neutral, while CDP is proprietary to Cisco).",
+              "image_url": "https://images.ctfassets.net/aoyx73g9h2pg/2OmvCnaVHsliSh3aiAbie9/54890665a2bb3b46f1f8457ebf88ca27/What-is-LLDP-Protocol-Diagram.jpg",
+              "sort_order": 13,
+              "category_id": 128
+            },
+            {
+              "id": 474,
+              "section_id": 26,
+              "name": "CIA",
+              "definition": "**Confidentiality, Integrity, and Availability.**\n\nThe three core foundational principles of information security: Confidentiality (restricting access and encrypting data), Integrity (ensuring data is unmodified using digital signatures), and Availability (ensuring systems remain online and accessible to authorized users).",
+              "image_url": "https://cdn.prod.website-files.com/6a020fca21245d64af2c19d8/6a020fca21245d64af2c3767_66a372b4a3d814c4fc284041_63fdd44daa2d3e1f527b40e7_CIA%252520Triad.jpeg",
+              "sort_order": 14,
+              "category_id": 128
+            },
+            {
+              "id": 475,
+              "section_id": 26,
+              "name": "CIDR",
+              "definition": "**Classless Inter-domain Routing.**\n\nAdopted in 1993 to eliminate rigid class boundaries, CIDR uses a shorthand slash notation (e.g., /24) to indicate the exact number of bits allocated to the subnet mask (matching decimal equivalents like 255.255.255.0)",
+              "image_url": "https://pacificconnect.co/wp-content/uploads/2024/10/Classless-Inter-Domain-Routing.png",
+              "sort_order": 15,
+              "category_id": 128
+            },
+            {
+              "id": 476,
+              "section_id": 26,
+              "name": "CNAME",
+              "definition": "**Canonical Name.**\n\nCreates an alias pointing multiple alternative hostnames to a single target record.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgvcOK9MLH7o8WtAWpLynf3krvp3rLO4eh8clhSYRP0FsiWumMdXWdghvm&s=10",
+              "sort_order": 16,
+              "category_id": 128
+            },
+            {
+              "id": 477,
+              "section_id": 26,
+              "name": "CRC",
+              "definition": "**Cyclic Redundancy Check.**\n\nIncrements when a received frame's calculated checksum does not match its frame check sequence (FCS), indicating signal corruption, bad cables, or faulty transceivers.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4O58a-oDiPB4L_e4rghVWDpNmMxDIKMEwigKXisRkuMvM4BlW8493eMio&s=10",
+              "sort_order": 17,
+              "category_id": 128
+            },
+            {
+              "id": 478,
+              "section_id": 26,
+              "name": "DAC",
+              "definition": "**Direct Attach Copper.**\n\nConsists of two conductors within a shared coaxial axis, frequently used for 10 Gigabit Ethernet links over short distances up to 5 meters with low latency and cost.",
+              "image_url": "https://ascentoptics.com/blog/wp-content/uploads/2024/07/2-2.png",
+              "sort_order": 18,
+              "category_id": 129
+            },
+            {
+              "id": 479,
+              "section_id": 26,
+              "name": "DCI",
+              "definition": "**Data Center Interconnect.**\n\nSeamlessly connects workloads and applications distributed across multiple cloud or physical data centers worldwide without worrying about localized IP addressing schemes.",
+              "image_url": "https://static.quickcreator.io/static/aaapycm22qmuab44/image/bf8cf055da894796b63bb20eb38e02ee.webp",
+              "sort_order": 19,
+              "category_id": 129
+            },
+            {
+              "id": 480,
+              "section_id": 26,
+              "name": "DFS",
+              "definition": "**Dynamic Frequency Selection.**\n\nAutomatically detects and shifts channels to avoid interfering with radar systems.",
+              "image_url": "https://www.snbforums.com/attachments/idl_dfs-jpg.6269/",
+              "sort_order": 20,
+              "category_id": 129
+            },
+            {
+              "id": 481,
+              "section_id": 26,
+              "name": "DHCP",
+              "definition": "**Dynamic Host Configuration Protocol.**\n\nAutomatically assigns IP address configurations and lease pools to devices connecting to a network.",
+              "image_url": "https://habrastorage.org/getpro/habr/upload_files/627/92a/ec0/62792aec0626cf752c59cbf42c4786ba.jpg",
+              "sort_order": 21,
+              "category_id": 129
+            },
+            {
+              "id": 482,
+              "section_id": 26,
+              "name": "DNS",
+              "definition": "**Domain Name System.**\n\nTranslates fully qualified domain names (FQDNs) into IP addresses. UDP port 53 is used for standard queries, while TCP port 53 is used for large zone transfers between DNS servers.",
+              "image_url": "https://www.itarian.com/blog/wp-content/uploads/2025/06/what-is-dns.png",
+              "sort_order": 22,
+              "category_id": 129
+            },
+            {
+              "id": 483,
+              "section_id": 26,
+              "name": "DNS64",
+              "definition": "**DNS 64.**\n\nUtilizing specialized translation routers and DNS servers to allow native IPv6 clients to communicate seamlessly with IPv4-only servers.",
+              "image_url": "https://i.postimg.cc/tC1hL0CK/83f300af-9c39-4e9f-9ee9-2c724aa8fb98.png",
+              "sort_order": 23,
+              "category_id": 129
+            },
+            {
+              "id": 484,
+              "section_id": 26,
+              "name": "DNSSEC",
+              "definition": "**Domain Name System Security Extensions.**\n\nUses digital signatures to authenticate DNS responses and ensure that data has not been spoofed or modified in transit.",
+              "image_url": "https://media.geeksforgeeks.org/wp-content/uploads/20240710183219/DNSSEC-VALIDATION-PROCESS-copy.webp",
+              "sort_order": 24,
+              "category_id": 129
+            },
+            {
+              "id": 485,
+              "section_id": 26,
+              "name": "DoH",
+              "definition": "**DNS over HTTPS.**\n\nEncrypt DNS traffic to prevent eavesdropping on queried hostnames. DoT sends queries over TCP port 853, while DoH encapsulates DNS queries inside standard encrypted HTTPS traffic (TCP port 443).",
+              "image_url": "https://www.cloudns.net/blog/wp-content/uploads/2023/04/DoT-and-DoH-1024x577.png",
+              "sort_order": 25,
+              "category_id": 129
+            },
+            {
+              "id": 486,
+              "section_id": 26,
+              "name": "DORA",
+              "definition": "**Discover, Offer, Request, Acknowledge.**\n\nDHCP automatically provisions IP configuration settings for devices on a network. The negotiation follows four distinct phases: Discover (client broadcasts to find DHCP servers), Offer (server offers an available IP address), Request (client requests an offered IP address), and Acknowledgment (server confirms and finalizes the lease).",
+              "image_url": "https://miro.medium.com/1*sDQaM6sO0nhcENpMear5MQ.jpeg",
+              "sort_order": 26,
+              "category_id": 129
+            },
+            {
+              "id": 487,
+              "section_id": 26,
+              "name": "DoT",
+              "definition": "**DNS over TLS.**\n\nEncrypt DNS traffic to prevent eavesdropping on queried hostnames. DoT sends queries over TCP port 853, while DoH encapsulates DNS queries inside standard encrypted HTTPS traffic (TCP port 443).",
+              "image_url": "https://www.cloudns.net/blog/wp-content/uploads/2023/04/DoT-and-DoH-1024x577.png",
+              "sort_order": 27,
+              "category_id": 129
+            },
+            {
+              "id": 488,
+              "section_id": 26,
+              "name": "EIGRP",
+              "definition": "**Enhanced Interior Gateway Routing Protocol.**\n\nA fast-converging protocol that optimizes network bandwidth and is popular in Cisco-centric environments.",
+              "image_url": "https://networkwalks.com/wp-content/uploads/2022/04/enhanced-interior-gateway-protocol-as-1.png",
+              "sort_order": 28,
+              "category_id": 130
+            },
+            {
+              "id": 489,
+              "section_id": 26,
+              "name": "EOL",
+              "definition": "**End-of-Life.**\n\nOccurs when a manufacturer stops actively supporting a product or producing new feature versions, though security patches may temporarily continue.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKB-gdEfRro2Ld8XS0ymjofPiXp01ki45HY4_jfXwThF5b5HUq5Dft7Dc&s=10",
+              "sort_order": 29,
+              "category_id": 130
+            },
+            {
+              "id": 490,
+              "section_id": 26,
+              "name": "EOS",
+              "definition": "**End-of-Support.**\n\nOccurs when a product receives no further updates, patches, or security fixes whatsoever, presenting a major security concern that requires hardware or software replacement.",
+              "image_url": "https://www.orbit365.co.uk/cdn/shop/articles/W10EOS.BLOG_eb60c42e-673f-49c0-b52c-f51ba3e4c981.png?v=1757348621",
+              "sort_order": 30,
+              "category_id": 130
+            },
+            {
+              "id": 491,
+              "section_id": 26,
+              "name": "ESP",
+              "definition": "**Encapsulating Security Payload.**\n\nEncrypts the payload for confidentiality while also providing authentication.",
+              "image_url": "https://www.konfirmity.com/images/glossary/esp-cyber-security/what-is-esp.webp",
+              "sort_order": 31,
+              "category_id": 130
+            },
+            {
+              "id": 492,
+              "section_id": 26,
+              "name": "ESSID",
+              "definition": "**Extended Service Set Identifier.**\n\nA shared SSID configured across multiple access points, allowing clients to roam seamlessly between them across a building or campus.",
+              "image_url": "https://acronymsandslang.com/acronym_image/171/c9975b039af5900f9a12dc13241cc633.jpg",
+              "sort_order": 32,
+              "category_id": 130
+            },
+            {
+              "id": 493,
+              "section_id": 26,
+              "name": "FHRP",
+              "definition": "**First Hop Redundancy Protocol.**\n\nProvides router redundancy and high availability on a local network segment, ensuring continuous connectivity if a primary router goes offline.",
+              "image_url": "https://www.pynetlabs.com/wp-content/uploads/2022/09/FHRP-First-Hop-Redundancy-Protocol-1024x597.jpeg",
+              "sort_order": 33,
+              "category_id": 131
+            },
+            {
+              "id": 494,
+              "section_id": 26,
+              "name": "FQDN",
+              "definition": "**Fully Qualified Domain Name.**\n\nDNS resolves hostnames to IP addresses using a hierarchical database structure that starts at root servers and top-level domains (.com, .org, country codes like .us) down to fully qualified domain names (FQDNs).",
+              "image_url": "https://www.cloudns.net/blog/wp-content/uploads/2023/06/Fully-Qualified-Domain-Name-FQDN.png",
+              "sort_order": 34,
+              "category_id": 131
+            },
+            {
+              "id": 495,
+              "section_id": 26,
+              "name": "FTP",
+              "definition": "**File Transfer Protocol.**\n\nUsed for generic file transfers across operating systems. Port 20 handles the data transfer process itself, while port 21 transmits control information.",
+              "image_url": "https://store-images.s-microsoft.com/image/apps.47186.14051379469879533.58284099-5ef3-4274-8846-f345593fc4d9.35c0513b-13d6-425d-b4aa-8ed6d9188c92",
+              "sort_order": 35,
+              "category_id": 131
+            },
+            {
+              "id": 496,
+              "section_id": 26,
+              "name": "GDPR",
+              "definition": "**General Data Protection Regulation.**\n\nAn EU privacy regulation granting individuals strict control over their personal data, including the right to data protection and removal.",
+              "image_url": "https://www.investopedia.com/thmb/j-Te5s88JZF_96k1qCoB2RwoNtU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/general-data-protection-regulation-gdpr.asp-final-1b12e02aa4d149b9af4fcd8aec409a89.png",
+              "sort_order": 36,
+              "category_id": 132
+            },
+            {
+              "id": 497,
+              "section_id": 26,
+              "name": "GRE",
+              "definition": "**Generic Routing Encapsulation.**\n\nEncapsulates packets to build unencrypted tunnels across networks, frequently used in basic VPN deployments.",
+              "image_url": "https://thumbs.dreamstime.com/z/gre-meaning-generic-routing-encapsulations-gre-abbreviation-generic-routing-encapsulations-337011446.jpg",
+              "sort_order": 37,
+              "category_id": 132
+            },
+            {
+              "id": 498,
+              "section_id": 26,
+              "name": "GUI",
+              "definition": "**Graphical User Interface.**\n\nRemote desktop software used to control a graphical operating system environment. Examples include Microsoft Remote Desktop Protocol (RDP) for Windows systems and Virtual Network Computing (VNC), which utilizes the Remote Frame Buffer (RFB) protocol across multiple operating systems.",
+              "image_url": "https://www.computerhope.com/jargon/g/gui.png",
+              "sort_order": 38,
+              "category_id": 132
+            },
+            {
+              "id": 499,
+              "section_id": 26,
+              "name": "HTTP",
+              "definition": "**Hypertext Transfer Protocol.**\n\nUsed for browser-based web server communication.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgjJV2ADwJIiu9ObRGmB9WgBAFTeuvQrcHyoVY3zcnQkwXAlmkbiCP0fo&s=10",
+              "sort_order": 39,
+              "category_id": 133
+            },
+            {
+              "id": 500,
+              "section_id": 26,
+              "name": "HTTPS",
+              "definition": "**Hypertext Transfer Protocol Secure.**\n\nUsed for browser-based web server communication.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgjJV2ADwJIiu9ObRGmB9WgBAFTeuvQrcHyoVY3zcnQkwXAlmkbiCP0fo&s=10",
+              "sort_order": 40,
+              "category_id": 133
+            },
+            {
+              "id": 501,
+              "section_id": 26,
+              "name": "IaaS",
+              "definition": "**Infrastructure as a Service.**\n\nProvides fundamental computing resources (virtual hardware, storage, and networking). The customer installs and manages their own OS, data, and software applications.",
+              "image_url": "https://media.geeksforgeeks.org/wp-content/uploads/20240506190058/What-is-IaaS.webp",
+              "sort_order": 41,
+              "category_id": 134
+            },
+            {
+              "id": 502,
+              "section_id": 26,
+              "name": "IBSS",
+              "definition": "**Independent Basic Service Set.**\n\nA peer-to-peer wireless connection where two or more devices communicate directly with each other without using a centralized access point (often used for initial IoT configuration).",
+              "image_url": "https://media.geeksforgeeks.org/wp-content/uploads/20201105190847/fffd2.png",
+              "sort_order": 42,
+              "category_id": 134
+            },
+            {
+              "id": 503,
+              "section_id": 26,
+              "name": "ICMP",
+              "definition": "**Internet Control Message Protocol.**\n\nOperates directly via IP without TCP or UDP to verify device connectivity (e.g., via the ping command) and report network diagnostics like unreachable destinations or expired time-to-live (TTL) counters.",
+              "image_url": "https://www.logsign.com/uploads/what_is_icmp_664d9661f5.png",
+              "sort_order": 43,
+              "category_id": 134
+            },
+            {
+              "id": 504,
+              "section_id": 26,
+              "name": "ICS",
+              "definition": "**Industrial Control System.**\n\nSegmenting large-scale industrial control systems (SCADA/ICS) and operational technology (OT)—such as power grids, traffic control, and manufacturing plants—to guarantee maximum uptime and availability.",
+              "image_url": "https://miro.medium.com/0*btFAHNopgpDf0dzH.png",
+              "sort_order": 44,
+              "category_id": 134
+            },
+            {
+              "id": 505,
+              "section_id": 26,
+              "name": "IDF",
+              "definition": "**Intermediate Distribution Frame.**\n\nLocated on separate floors or in separate buildings, IDFs house switches, routers, and equipment that connect local user areas back to the central MDF.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShULwh5JLw7ZVpFLA6yMcnGWwiybPG7SufoiGbkptQkWPB23RDs_IvICQw&s=10",
+              "sort_order": 45,
+              "category_id": 134
+            },
+            {
+              "id": 506,
+              "section_id": 26,
+              "name": "IDS",
+              "definition": "**Intrusion detection system.**\n\n**IDS**: A **passive** monitoring system. It inspects traffic for malicious signatures or anomalies and generates alerts for administrators, but does not alter or drop traffic.\n**IPS**: An **active/inline** system. Positioned directly in the traffic flow, it detects threats and automatically blocks or drops malicious packets in real-time.",
+              "image_url": "https://synchronet.net/wp-content/uploads/2025/01/ids-vs-ips.jpeg",
+              "sort_order": 46,
+              "category_id": 134
+            },
+            {
+              "id": 507,
+              "section_id": 26,
+              "name": "IEEE",
+              "definition": "**Institute of Electrical and Electronics Engineers.**\n\nGoverns wired Ethernet networks, defining minimum cable categories, signaling types, and throughput expectations (e.g., 1000BASE-T and 10GBASE-T).",
+              "image_url": "https://onlinestandart.com/wp-content/uploads/2024/10/ieee-802.3.webp",
+              "sort_order": 47,
+              "category_id": 134
+            },
+            {
+              "id": 508,
+              "section_id": 26,
+              "name": "IIoT",
+              "definition": "**Industrial Internet of Things.**\n\nIsolating smart home/office devices (IoT) and connected industrial machinery (IIoT) onto dedicated networks to prevent inherent security flaws from compromising critical assets.",
+              "image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhL_GWlBET-xdRn6tB_WM6NmoAC24O52sZJSRbUT-3tpSAVTZifKq_ympDX_rve_QEjeJVMPcw7Rkmklw_pv538r1bvpN_5BRJWaXV3N6_VK0FiRYWZLHldruJVAkGfS_8mbBybil5jB9I/s1600/IoT_vs_IIoT.jpg",
+              "sort_order": 48,
+              "category_id": 134
+            },
+            {
+              "id": 509,
+              "section_id": 26,
+              "name": "IKE",
+              "definition": "**Internet Key Exchange.**\n\nOperates over UDP port 500 to negotiate security associations and cryptographic keys before secure communication begins.",
+              "image_url": "https://sase.checkpoint.com/wp-content/uploads/2023/11/Internet-Key-Exchange-IKE.jpg",
+              "sort_order": 49,
+              "category_id": 134
+            },
+            {
+              "id": 510,
+              "section_id": 26,
+              "name": "IoT",
+              "definition": "**Internet of Things.**\n\nIsolating smart home/office devices (IoT) and connected industrial machinery (IIoT) onto dedicated networks to prevent inherent security flaws from compromising critical assets.",
+              "image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhL_GWlBET-xdRn6tB_WM6NmoAC24O52sZJSRbUT-3tpSAVTZifKq_ympDX_rve_QEjeJVMPcw7Rkmklw_pv538r1bvpN_5BRJWaXV3N6_VK0FiRYWZLHldruJVAkGfS_8mbBybil5jB9I/s1600/IoT_vs_IIoT.jpg",
+              "sort_order": 50,
+              "category_id": 134
+            },
+            {
+              "id": 511,
+              "section_id": 26,
+              "name": "IP",
+              "definition": "**Internet Protocol.**\n\nThe network-layer protocol that addresses hosts and moves packets between networks. IPv4 and IPv6 are the versions used on modern networks.",
+              "image_url": "",
+              "sort_order": 51,
+              "category_id": 134
+            },
+            {
+              "id": 512,
+              "section_id": 26,
+              "name": "IPAM",
+              "definition": "**IP Address Management.**\n\nTracks organization equipment (laptops, desktops, routers, switches) using visible tags, barcodes, or RFID tags. A centralized asset database links device components, assigned users, financial depreciation, purchase dates, warranty status, and software licensing requirements.",
+              "image_url": "https://www.cloudns.net/blog/wp-content/uploads/2023/07/IPAM.png",
+              "sort_order": 52,
+              "category_id": 134
+            },
+            {
+              "id": 513,
+              "section_id": 26,
+              "name": "IPS",
+              "definition": "**intrusion prevention system.**\n\n**IDS**: A **passive** monitoring system. It inspects traffic for malicious signatures or anomalies and generates alerts for administrators, but does not alter or drop traffic.\n**IPS**: An **active/inline** system. Positioned directly in the traffic flow, it detects threats and automatically blocks or drops malicious packets in real-time.",
+              "image_url": "https://synchronet.net/wp-content/uploads/2025/01/ids-vs-ips.jpeg",
+              "sort_order": 53,
+              "category_id": 134
+            },
+            {
+              "id": 514,
+              "section_id": 26,
+              "name": "IPSec",
+              "definition": "**Internet Protocol Security.**\n\nA robust security suite used to protect VPN tunnels. Key components include",
+              "image_url": "https://www.emnify.com/hubfs/Title-ipsec.webp",
+              "sort_order": 54,
+              "category_id": 134
+            },
+            {
+              "id": 515,
+              "section_id": 26,
+              "name": "ISAKMP",
+              "definition": "**Internet Security Association and Key Management Protocol.**\n\nOperates over UDP port 500 to negotiate security associations and cryptographic keys before secure communication begins.",
+              "image_url": "https://sase.checkpoint.com/wp-content/uploads/2023/11/Internet-Key-Exchange-IKE.jpg",
+              "sort_order": 55,
+              "category_id": 134
+            },
+            {
+              "id": 516,
+              "section_id": 26,
+              "name": "LAG",
+              "definition": "**Link Aggregation Group.**\n\nCombines multiple physical switch interfaces into a single logical high-bandwidth channel. Protocols like LACP (Link Aggregation Control Protocol) automatically configure and manage these aggregated links between devices.",
+              "image_url": "https://nybsys.com/wp-content/uploads/2024/11/What-is-link-Aggregation.webp",
+              "sort_order": 56,
+              "category_id": 135
+            },
+            {
+              "id": 517,
+              "section_id": 26,
+              "name": "LC",
+              "definition": "**Local Connector.**\n\nA smaller \"lucent\" connector featuring a retention clip on top to lock it securely into ports.",
+              "image_url": "https://ascentoptics.com/blog/wp-content/uploads/2024/07/1.1.png",
+              "sort_order": 57,
+              "category_id": 135
+            },
+            {
+              "id": 518,
+              "section_id": 26,
+              "name": "LDAP",
+              "definition": "**Lightweight Directory Access Protocol.**\n\nMaintains and queries hierarchical databases of network users and devices.",
+              "image_url": "https://surepassid.com/hubfs/LDAP-Lightweight-Directory-Access-Protocol2.png",
+              "sort_order": 58,
+              "category_id": 135
+            },
+            {
+              "id": 519,
+              "section_id": 26,
+              "name": "LDAPS",
+              "definition": "**Lightweight Directory Access Protocol Secure.**\n\nMaintains and queries hierarchical databases of network users and devices.",
+              "image_url": "https://surepassid.com/hubfs/LDAP-Lightweight-Directory-Access-Protocol2.png",
+              "sort_order": 59,
+              "category_id": 135
+            },
+            {
+              "id": 520,
+              "section_id": 26,
+              "name": "LLDP",
+              "definition": "**Link Layer Discovery Protocol.**\n\nProtocols used to automatically gather switch configuration details, native VLANs, and port information without needing to log directly into the device (LLDP is vendor-neutral, while CDP is proprietary to Cisco).",
+              "image_url": "https://images.ctfassets.net/aoyx73g9h2pg/2OmvCnaVHsliSh3aiAbie9/54890665a2bb3b46f1f8457ebf88ca27/What-is-LLDP-Protocol-Diagram.jpg",
+              "sort_order": 60,
+              "category_id": 135
+            },
+            {
+              "id": 521,
+              "section_id": 26,
+              "name": "MAC",
+              "definition": "**Media Access Control.**\n\nRestricts network access based on hardware MAC addresses. Because MAC addresses can easily be spoofed or changed administratively, it is considered \"security through obscurity\" and can be circumvented.",
+              "image_url": "https://media.geeksforgeeks.org/wp-content/uploads/20260207100727825445/mac_filtering.webp",
+              "sort_order": 61,
+              "category_id": 136
+            },
+            {
+              "id": 522,
+              "section_id": 26,
+              "name": "MDF",
+              "definition": "**Main Distribution Frame.**\n\nThe central data center or primary distribution facility where wide area network (WAN) connections, internal local network connections, core routers, switches, and core servers terminate. It acts as an ideal testing point for both internal and external connections.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShULwh5JLw7ZVpFLA6yMcnGWwiybPG7SufoiGbkptQkWPB23RDs_IvICQw&s=10",
+              "sort_order": 62,
+              "category_id": 136
+            },
+            {
+              "id": 523,
+              "section_id": 26,
+              "name": "MFA",
+              "definition": "**Multifactor Authentication.**\n\nRequiring two or more independent authentication factors (something you know, have, are, or somewhere you are).",
+              "image_url": "https://www.xcitium.com/images/multi-factor-authentication-mfa.png",
+              "sort_order": 63,
+              "category_id": 136
+            },
+            {
+              "id": 524,
+              "section_id": 26,
+              "name": "MIB",
+              "definition": "**Management Information Base.**\n\nA central database of parameters stored on remote devices. Specific variables within the MIB are accessed via Object Identifiers (OIDs).",
+              "image_url": "https://ih1.dpstele.com/images/manager-agent-mib2-350.webp",
+              "sort_order": 64,
+              "category_id": 136
+            },
+            {
+              "id": 525,
+              "section_id": 26,
+              "name": "MPO",
+              "definition": "**Multi-fiber Push On.**\n\nHouses 12 individual fibers within a single push-on connection to maximize density.",
+              "image_url": "https://www.tiafotc.org/wp-content/uploads/2022/11/MPO-MTP-Male-Female-Connectors-Right-Facing-2.jpg",
+              "sort_order": 65,
+              "category_id": 136
+            },
+            {
+              "id": 526,
+              "section_id": 26,
+              "name": "MS SQL",
+              "definition": "**Microsoft SQL Server.**\n\nUsed to query and retrieve data from Microsoft Structured Query Language databases.",
+              "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Database-mysql.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+              "sort_order": 66,
+              "category_id": 136
+            },
+            {
+              "id": 527,
+              "section_id": 26,
+              "name": "MTBF",
+              "definition": "**Mean Time Between Failures.**\n\nThe predicted average time frame that a hardware component or device is expected to operate before failing, assisting with long-term replacement planning.",
+              "image_url": "https://resco.net/app/uploads/a-graph-explaining-mean-time-between-failures-mtbf-failure-metric.jpg",
+              "sort_order": 67,
+              "category_id": 136
+            },
+            {
+              "id": 528,
+              "section_id": 26,
+              "name": "MTP",
+              "definition": "**Multi-fiber Termination Push-on.**\n\nHouses 12 individual fibers within a single push-on connection to maximize density.",
+              "image_url": "https://www.tiafotc.org/wp-content/uploads/2022/11/MPO-MTP-Male-Female-Connectors-Right-Facing-2.jpg",
+              "sort_order": 68,
+              "category_id": 136
+            },
+            {
+              "id": 529,
+              "section_id": 26,
+              "name": "MTTR",
+              "definition": "**Mean Time to Repair.**\n\nThe average time it takes to troubleshoot, resolve an issue, or replace a failed component to get a system back online.",
+              "image_url": "https://resco.net/app/uploads/a-graph-explaining-mean-time-to-repair-mttr-failure-metric.jpg",
+              "sort_order": 69,
+              "category_id": 136
+            },
+            {
+              "id": 530,
+              "section_id": 26,
+              "name": "MTU",
+              "definition": "**Maximum Transmission Unit.**\n\nSpecifies the largest packet size that can be transmitted across a network medium.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK1UuGrGQI-eO753seNhzYeKpIkTHMorjHnOgkerjB_URC8yXYJJgppS4&s=10",
+              "sort_order": 70,
+              "category_id": 136
+            },
+            {
+              "id": 531,
+              "section_id": 26,
+              "name": "MX",
+              "definition": "**Mail Exchange.**\n\nIdentifies the mail servers responsible for receiving email for a domain.",
+              "image_url": "https://cdn.prod.website-files.com/645258dee17c72222bca47d8/689b32a248b853f922c99c95_4bf99b02-3e3a-4a67-8b30-6595694b1138.webp",
+              "sort_order": 71,
+              "category_id": 136
+            },
+            {
+              "id": 532,
+              "section_id": 26,
+              "name": "NAS",
+              "definition": "**Network-attached storage.**\n\nFile-level storage device connected directly to a TCP/IP network. Clients access files via protocols like SMB or NFS. It is generally cost-effective and easier to set up.",
+              "image_url": "https://cdn.prod.website-files.com/672bdc2d5c21197424e41ee8/67cdaa65e7250808507ebcde_NAS-RAID-Storage-System-1.png",
+              "sort_order": 72,
+              "category_id": 137
+            },
+            {
+              "id": 533,
+              "section_id": 26,
+              "name": "NAT",
+              "definition": "**Network Address Translation.**\n\nTranslates private, non-routable local IP addresses (defined under RFC 1918) into public IP addresses so internal devices can access the internet.",
+              "image_url": "https://cibersafety.com/wp-content/uploads/2025/07/NAT.png",
+              "sort_order": 73,
+              "category_id": 137
+            },
+            {
+              "id": 534,
+              "section_id": 26,
+              "name": "NAT64",
+              "definition": "**Network Address Translation 64.**\n\nUtilizing specialized translation routers and DNS servers to allow native IPv6 clients to communicate seamlessly with IPv4-only servers.",
+              "image_url": "https://i.postimg.cc/tC1hL0CK/83f300af-9c39-4e9f-9ee9-2c724aa8fb98.png",
+              "sort_order": 74,
+              "category_id": 137
+            },
+            {
+              "id": 535,
+              "section_id": 26,
+              "name": "NDP",
+              "definition": "**Neighbor Discovery Protocol.**\n\nDevices use the Neighbor Discovery Protocol (NDP) to send router solicitations and receive 64-bit subnet prefixes via router advertisements. The device then generates its own 64-bit interface ID (using a randomized value or modified MAC address) and runs Duplicate Address Detection (DAD) to verify uniqueness on the network.",
+              "image_url": "https://ipcisco.com/wp-content/uploads/ndp/neighbour-discovery-protocols.jpg",
+              "sort_order": 75,
+              "category_id": 137
+            },
+            {
+              "id": 536,
+              "section_id": 26,
+              "name": "NFV",
+              "definition": "**Network functions virtualization.**\n\nReplaces physical networking hardware (like routers, switches, and firewalls) with virtual appliances running in a hypervisor environment while maintaining the exact same functionality.",
+              "image_url": "https://as2.ftcdn.net/jpg/04/20/14/97/1000_F_420149742_BUYn6O9eM4AE6hdg2E21msdRPayA81c9.jpg",
+              "sort_order": 76,
+              "category_id": 137
+            },
+            {
+              "id": 537,
+              "section_id": 26,
+              "name": "NS",
+              "definition": "**Name Server.**\n\nDesignates the authoritative name servers for a specific domain.",
+              "image_url": "https://mailprovider.com/wp-content/uploads/2024/11/what-is-a-name-server.png",
+              "sort_order": 77,
+              "category_id": 137
+            },
+            {
+              "id": 538,
+              "section_id": 26,
+              "name": "NTP",
+              "definition": "**Network Time Protocol.**\n\nAutomatically synchronizes the system clocks of network devices down to the millisecond level to ensure accurate log correlation.",
+              "image_url": "https://netdata.cloud/img/ntp.png",
+              "sort_order": 78,
+              "category_id": 137
+            },
+            {
+              "id": 539,
+              "section_id": 26,
+              "name": "NTS",
+              "definition": "**Network Time Security.**\n\nAdds cryptographic authentication and key exchange (via a TLS handshake and secure cookies) to NTP to prevent time-manipulation attacks that could otherwise break protocols like Kerberos.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQRmdgLypfoQG8RGNwP7_nC2cVLmQi3YHeaCiG2GTN8eNNvJGWm-cE7wEo&s=10",
+              "sort_order": 79,
+              "category_id": 137
+            },
+            {
+              "id": 540,
+              "section_id": 26,
+              "name": "OS",
+              "definition": "**Operating system.**\n\nManaged via scheduled monthly updates or emergency zero-day fixes across operating systems (such as Windows, Linux, iOS, and Android), alongside custom configuration adjustments like password complexity rules and built-in firewall updates.",
+              "image_url": "https://www.trentonsystems.com/hs-fs/hubfs/Operating%20System%20.jpeg?width=3099&name=Operating%20System%20.jpeg",
+              "sort_order": 80,
+              "category_id": 138
+            },
+            {
+              "id": 541,
+              "section_id": 26,
+              "name": "OSI",
+              "definition": "**Open Systems Interconnection.**\n\nA conceptual framework that breaks network communication down into seven distinct layers. It is designed for teaching, conceptualizing, and troubleshooting—not a protocol stack you install.\n\n**Network+ Tip**: Use this model to quickly determine which layer a device, address, or network symptom belongs to.",
+              "image_url": "https://blog.rarecrew.com/image.axd?picture=/OSI%20model/RC_CNE_Blog_930x620px_01.png",
+              "sort_order": 81,
+              "category_id": 138
+            },
+            {
+              "id": 542,
+              "section_id": 26,
+              "name": "OSPF",
+              "definition": "**Open Shortest Path First.**\n\nAn open standard, link-state routing protocol used within an autonomous system across various manufacturers' hardware, calculating optimal paths based on link costs.",
+              "image_url": "https://s8185.pcdn.co/wp-content/uploads/2013/10/54.png",
+              "sort_order": 82,
+              "category_id": 138
+            },
+            {
+              "id": 543,
+              "section_id": 26,
+              "name": "OT",
+              "definition": "**Operational Technology.**\n\nSegmenting large-scale industrial control systems (SCADA/ICS) and operational technology (OT)—such as power grids, traffic control, and manufacturing plants—to guarantee maximum uptime and availability.",
+              "image_url": "https://miro.medium.com/0*btFAHNopgpDf0dzH.png",
+              "sort_order": 83,
+              "category_id": 138
+            },
+            {
+              "id": 544,
+              "section_id": 26,
+              "name": "PaaS",
+              "definition": "**Platform as a Service.**\n\nProvides a managed platform and development tools so customers can build, customize, and manage their own applications without worrying about underlying engine maintenance.",
+              "image_url": "https://ik.imagekit.io/upgrad1/abroad-images/imageCompo/images/paas_in_cloud_computingEQH4CJ.png?pr-true",
+              "sort_order": 84,
+              "category_id": 139
+            },
+            {
+              "id": 545,
+              "section_id": 26,
+              "name": "PAT",
+              "definition": "**Port Address Translation.**\n\nMaps unique source port numbers along with private IP addresses to a single public IP address. This allows multiple internal hosts to share one public IP address simultaneously.",
+              "image_url": "https://www.pynetlabs.com/wp-content/uploads/2025/02/pat-nat-overloaded-1024x729.jpg",
+              "sort_order": 85,
+              "category_id": 139
+            },
+            {
+              "id": 546,
+              "section_id": 26,
+              "name": "PCI DSS",
+              "definition": "**Payment Card Industry Data Security Standard.**\n\nA regulatory framework established to secure networks, protect cardholder data, maintain vulnerability programs, enforce access controls, and conduct regular audits.",
+              "image_url": "https://cdn.prod.website-files.com/67c76d11e5810e680022e21f/68ae055ee0858d42db933e79_what-is-pci-dss.jpg",
+              "sort_order": 86,
+              "category_id": 139
+            },
+            {
+              "id": 547,
+              "section_id": 26,
+              "name": "PDU",
+              "definition": "**Power Distribution Unit.**\n\nRack-mountable intelligent power strips that distribute power to devices and allow administrators to remotely monitor and power cycle individual outlets over an IP network.",
+              "image_url": "https://marvel-b1-cdn.bc0a.com/f00000000057284/www.cyberpowersystems.com/wp-content/uploads/2022/08/New-Web-PDU-Series-1480x760-R1-1024x526.png",
+              "sort_order": 87,
+              "category_id": 139
+            },
+            {
+              "id": 548,
+              "section_id": 26,
+              "name": "PKI",
+              "definition": "**Public Key Infrastructure.**\n\nThe comprehensive set of policies, controls, and management structures used to create, distribute, and manage digital certificates and encryption keys across an organization.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJlYt4FMyNdU2jLlPWHLG-qAO_NpBZ60yM4uT-b8URRJTOoue95eGiu8s&s=10",
+              "sort_order": 88,
+              "category_id": 139
+            },
+            {
+              "id": 549,
+              "section_id": 26,
+              "name": "PSK",
+              "definition": "**Pre-Shared Key.**\n\nUtilizes a single, shared password for all users connecting to the network.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjsHrJzSqIJcuz-S9tdYcwkzo_JU_fYi-0mYw_W-pwf6LT9zZupfs0TynR&s=10",
+              "sort_order": 89,
+              "category_id": 139
+            },
+            {
+              "id": 550,
+              "section_id": 26,
+              "name": "PTP",
+              "definition": "**Precision Time Protocol.**\n\nA hardware-based time synchronization protocol offering sub-nanosecond precision for industrial and specialized environments requiring exact timing independent of operating system delays.",
+              "image_url": "https://ipcisco.com/wp-content/uploads/2023/03/Precision-Time-Protocol-ptp-ipcisco.png",
+              "sort_order": 90,
+              "category_id": 139
+            },
+            {
+              "id": 551,
+              "section_id": 26,
+              "name": "PTR",
+              "definition": "**Pointer.**\n\nMaps an IP address to a hostname for reverse DNS lookups.",
+              "image_url": "https://cdn.ewskills.com/articles/pointer/cardimg/Pointer.webp",
+              "sort_order": 91,
+              "category_id": 139
+            },
+            {
+              "id": 552,
+              "section_id": 26,
+              "name": "QoS",
+              "definition": "**Quality of service.**\n\nA set of technologies that manage network resources by prioritizing certain types of traffic (e.g., VoIP or video conferencing) over others (e.g., large file downloads) to minimize jitter, packet loss, and latency.",
+              "image_url": "https://statics.mylandingpages.co/static/aaapycm22qmuab44/image/9455aaec8994419fa15307512f6652d5.webp",
+              "sort_order": 92,
+              "category_id": 140
+            },
+            {
+              "id": 553,
+              "section_id": 26,
+              "name": "QSFP",
+              "definition": "**Quad Small Form-Factor Pluggable.**\n\nIntegrates four channels into a slightly larger form factor than a standard SFP, multiplying throughput capacity (such as supporting 40 Gbps aggregate throughput).",
+              "image_url": "https://www.baudcom.com.cn/wp-content/uploads/2025/11/What-is-SFP-and-QSFP-1024x630.jpg",
+              "sort_order": 93,
+              "category_id": 140
+            },
+            {
+              "id": 554,
+              "section_id": 26,
+              "name": "QSFP+",
+              "definition": "**Quad Small Form-Factor Pluggable Plus.**\n\nIntegrates four channels into a slightly larger form factor than a standard SFP, multiplying throughput capacity (such as supporting 40 Gbps aggregate throughput).",
+              "image_url": "https://www.baudcom.com.cn/wp-content/uploads/2025/11/What-is-SFP-and-QSFP-1024x630.jpg",
+              "sort_order": 94,
+              "category_id": 140
+            },
+            {
+              "id": 555,
+              "section_id": 26,
+              "name": "RADIUS",
+              "definition": "**Remote Authentication Dial-In User Service.**\n\nA standard AAA protocol frequently used to authenticate users connecting to VPN servers, network equipment, and wireless networks (802.1X).",
+              "image_url": "https://images.ctfassets.net/aoyx73g9h2pg/7tZuPzBWiTawuNOXrstJS5/1fc7e01a8f842fbba9f7ccc4adea91f0/What-is-RADIUS-Remote-Authentication-Dial-In-User-Service-Diagram.jpg",
+              "sort_order": 95,
+              "category_id": 141
+            },
+            {
+              "id": 556,
+              "section_id": 26,
+              "name": "RBAC",
+              "definition": "**Role-based access control.**\n\nAssigning permissions to organizational roles or groups rather than individuals, simplifying access management.",
+              "image_url": "https://cdn.prod.website-files.com/6a020fca21245d64af2c19d8/6a020fca21245d64af2c3c8f_67ab6226372b182be4e12169_60a23b06b2d3123baf7c305d_RBAC.png",
+              "sort_order": 96,
+              "category_id": 141
+            },
+            {
+              "id": 557,
+              "section_id": 26,
+              "name": "RDP",
+              "definition": "**Remote Desktop Protocol.**\n\nEnables remote graphical desktop sessions to Windows workstations and servers.",
+              "image_url": "https://i0.wp.com/blog.oudel.com/wp-content/uploads/2022/07/RDP.png?fit=800%2C533&ssl=1",
+              "sort_order": 97,
+              "category_id": 141
+            },
+            {
+              "id": 558,
+              "section_id": 26,
+              "name": "RFC",
+              "definition": "**Request for Comments.**\n\nDefines the three official private IP address blocks:",
+              "image_url": "https://www.flackbox.com/wp-content/uploads/2020/04/word-image-16.png",
+              "sort_order": 98,
+              "category_id": 141
+            },
+            {
+              "id": 559,
+              "section_id": 26,
+              "name": "RJ11",
+              "definition": "**Registered Jack 11.**\n\nA 6-position, 2-conductor (6P2C) modular connector commonly used for analog telephones and DSL lines.",
+              "image_url": "https://images.ctfassets.net/aoyx73g9h2pg/21DSu2utwStV9kBHDhJNjp/9de397ff7db8da36d195f770fc1ff3ab/RJ11-vs-RJ45-Diagram.jpg",
+              "sort_order": 99,
+              "category_id": 141
+            },
+            {
+              "id": 560,
+              "section_id": 26,
+              "name": "RJ45",
+              "definition": "**Registered Jack 45.**\n\nAn 8-position, 8-conductor modular connector used for wired local area network Ethernet connections.",
+              "image_url": "https://images.ctfassets.net/aoyx73g9h2pg/21DSu2utwStV9kBHDhJNjp/9de397ff7db8da36d195f770fc1ff3ab/RJ11-vs-RJ45-Diagram.jpg",
+              "sort_order": 100,
+              "category_id": 141
+            },
+            {
+              "id": 561,
+              "section_id": 26,
+              "name": "RPO",
+              "definition": "**Recovery Point Objective.**\n\nMeasured as an amount of time, RPO represents how much data is lost when an outage occurs, spanning from the last data backup or replication point to the moment of failure.\n\nCritical systems (such as banking or patient records) require a very short RPO (often less than an hour) to minimize data loss.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC4DtJI58OtJt8xD3m2E0dp6Y5TAA4IItMxWZyEjF6eWQQKMyil8QYglI&s=10",
+              "sort_order": 101,
+              "category_id": 141
+            },
+            {
+              "id": 562,
+              "section_id": 26,
+              "name": "RSTP",
+              "definition": "**Rapid Spanning Tree Protocol.**\n\nA modern evolution of STP that reduces network convergence times from 30–50 seconds down to approximately 6 seconds while remaining backward-compatible with original STP devices.",
+              "image_url": "https://ipwithease.com/wp-content/uploads/2023/08/Rapid-Spanning-Tree-Protocol-RSTP.jpg.webp",
+              "sort_order": 102,
+              "category_id": 141
+            },
+            {
+              "id": 563,
+              "section_id": 26,
+              "name": "RTO",
+              "definition": "**Recovery Time Objective.**\n\nMeasured as an amount of time, RTO is the measurement of how quickly services and normal operation levels can be restored after an outage occurs.\n\nOrganizations aim to keep RTO as close to zero as possible.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC4DtJI58OtJt8xD3m2E0dp6Y5TAA4IItMxWZyEjF6eWQQKMyil8QYglI&s=10",
+              "sort_order": 103,
+              "category_id": 141
+            },
+            {
+              "id": 564,
+              "section_id": 26,
+              "name": "RX",
+              "definition": "**Receive.**\n\nReversing the transmit and receive fibers or wires results in a \"no link\" condition because data is sent into another transmitter instead of a receiver.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReKvCZAsQfLKLZjWlQc99PSNNU4YnkJxb0djjcmFegkGg1NZfbYX31R-g3&s=10",
+              "sort_order": 104,
+              "category_id": 141
+            },
+            {
+              "id": 565,
+              "section_id": 26,
+              "name": "SaaS",
+              "definition": "**Software as a Service.**\n\nA complete, on-demand application delivered via a web browser login where the provider manages everything (software, data storage, and maintenance).",
+              "image_url": "https://www.investopedia.com/thmb/FmHi2FYg-2nDq1JneTHLWNT6Z1w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Software-as-a-service-saas_final-5caef210a00b48f5ac5de4964f72a016.png",
+              "sort_order": 105,
+              "category_id": 142
+            },
+            {
+              "id": 566,
+              "section_id": 26,
+              "name": "SAML",
+              "definition": "**Security Assertion Markup Language.**\n\nAn open standard utilizing resource servers, clients, and authorization servers for web-based authentication and authorization.",
+              "image_url": "https://freescout.net/wp-content/uploads/edd/2022/05/freescout-saml-sso-module-1000x750.png",
+              "sort_order": 106,
+              "category_id": 142
+            },
+            {
+              "id": 567,
+              "section_id": 26,
+              "name": "SAN",
+              "definition": "**Storage area network.**\n\nHigh-speed block-level storage network dedicated to servers. It connects via specialized high-performance fabrics (like Fibre Channel or iSCSI), making it ideal for high-throughput enterprise databases and virtualization.",
+              "image_url": "https://images.ctfassets.net/aoyx73g9h2pg/3FWdrPoM4gST5RZKw1SHXY/86724b2ccded9a12b7e15615a3645faf/What-is-Storage-Area-Network-SAN-Diagram.jpg",
+              "sort_order": 107,
+              "category_id": 142
+            },
+            {
+              "id": 568,
+              "section_id": 26,
+              "name": "SC",
+              "definition": "**Subscriber Connector.**\n\nA square-shaped standard connector that uses a push-and-snap locking mechanism.",
+              "image_url": "https://m.media-amazon.com/images/I/61PSWdvjc8L.jpg",
+              "sort_order": 108,
+              "category_id": 142
+            },
+            {
+              "id": 569,
+              "section_id": 26,
+              "name": "SCADA",
+              "definition": "**Supervisory Control and Data Acquisition.**\n\nSegmenting large-scale industrial control systems (SCADA/ICS) and operational technology (OT)—such as power grids, traffic control, and manufacturing plants—to guarantee maximum uptime and availability.",
+              "image_url": "https://miro.medium.com/0*btFAHNopgpDf0dzH.png",
+              "sort_order": 109,
+              "category_id": 142
+            },
+            {
+              "id": 570,
+              "section_id": 26,
+              "name": "SD-WAN",
+              "definition": "**Software-Defined Wide Area Network.**\n\nBuilt specifically to manage the architectural shift of moving corporate data and applications into the cloud. Key characteristics include:",
+              "image_url": "https://www.fortinet.com/content/dam/fortinet/images/cyberglossary/sd-wan-architecture.png",
+              "sort_order": 110,
+              "category_id": 142
+            },
+            {
+              "id": 571,
+              "section_id": 26,
+              "name": "SFP",
+              "definition": "**Small Form-Factor Pluggable.**\n\nStandard modular transceivers typically used for 1 Gbps connections, while enhanced SFP+ transceivers support speeds up to 16 Gbps for 10GbE.",
+              "image_url": "https://www.baudcom.com.cn/wp-content/uploads/2025/11/What-is-SFP-and-QSFP-1024x630.jpg",
+              "sort_order": 111,
+              "category_id": 142
+            },
+            {
+              "id": 572,
+              "section_id": 26,
+              "name": "SFTP",
+              "definition": "**Secure File Transfer Protocol.**\n\nSSH provides encrypted, text-based remote command-line management. SFTP leverages the underlying SSH protocol to allow secure, encrypted file transfers and file management.",
+              "image_url": "https://www.tenfold-security.com/wp-content/uploads/ssh.png",
+              "sort_order": 112,
+              "category_id": 142
+            },
+            {
+              "id": 573,
+              "section_id": 26,
+              "name": "SIEM",
+              "definition": "**Security Information and Event Management.**\n\nAggregates logs, provides real-time dashboards, runs advanced correlation queries (such as detecting brute-force password attempts), and stores long-term data for security forensics.",
+              "image_url": "https://cdn.prod.website-files.com/6a020fca21245d64af2c19d8/6a020fca21245d64af2c2c69_13%20%D0%BF%D1%80%D0%B5%D0%B2%D1%8C%D1%8E.jpg",
+              "sort_order": 113,
+              "category_id": 142
+            },
+            {
+              "id": 574,
+              "section_id": 26,
+              "name": "SIP",
+              "definition": "**Session Initiation Protocol.**\n\nActs as the core control protocol for Voice over IP (VoIP) and video conferencing to set up, manage, and tear down sessions.",
+              "image_url": "https://www.carrierbid.com/wp-content/uploads/2018/10/5.-SIP@250x250.png",
+              "sort_order": 114,
+              "category_id": 142
+            },
+            {
+              "id": 575,
+              "section_id": 26,
+              "name": "SLA",
+              "definition": "**Service-Level Agreement.**\n\nA contractual agreement defining the minimum level of service required from a third-party vendor or service provider, such as maintaining 99.99% uptime or enforcing maximum unscheduled downtime limits.",
+              "image_url": "https://infraon.io/blog/wp-content/uploads/2025/03/Service-Level-Agreement-SLA-Learn-About-it-in-2023.png.webp",
+              "sort_order": 115,
+              "category_id": 142
+            },
+            {
+              "id": 576,
+              "section_id": 26,
+              "name": "SLAAC",
+              "definition": "**Stateless Address Autoconfiguration.**\n\nIn IPv6, stateless address autoconfiguration enables devices to generate their own routable IPv6 addresses without requiring a DHCPv6 server or tracking lease times.",
+              "image_url": "https://ipcisco.com/wp-content/uploads/2019/02/SLAAC-IPv6-Stateless-Auto-Configuration-1.jpg",
+              "sort_order": 116,
+              "category_id": 142
+            },
+            {
+              "id": 577,
+              "section_id": 26,
+              "name": "SMB",
+              "definition": "**Server Message Block.**\n\nUsed in Microsoft Windows environments for file shares, printer sharing, and network authentication.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNfasPJE1ueZo1QHuIYMxOSJKpPOJ4-LisVxesmDBcqJh0WYeao9VfO3E&s=10",
+              "sort_order": 117,
+              "category_id": 142
+            },
+            {
+              "id": 578,
+              "section_id": 26,
+              "name": "SMTP",
+              "definition": "**Simple Mail Transfer Protocol.**\n\nUsed for server-to-server email delivery and by client devices to send mail to mail servers.",
+              "image_url": "https://captainverify.com/blog/wp-content/uploads/2023/12/smtp-1-jpg.webp",
+              "sort_order": 118,
+              "category_id": 142
+            },
+            {
+              "id": 579,
+              "section_id": 26,
+              "name": "SNMP",
+              "definition": "**Simple Network Management Protocol.**\n\nUsed to monitor and manage network hardware. Port 161 queries device performance data, while port 162 allows devices to proactively send event notifications (\"traps\") to a management station.",
+              "image_url": "https://www.cloudns.net/blog/wp-content/uploads/2023/06/snmp.png",
+              "sort_order": 119,
+              "category_id": 142
+            },
+            {
+              "id": 580,
+              "section_id": 26,
+              "name": "SOA",
+              "definition": "Start of Authority records define overall zone parameters, serial numbers, and refresh timers.",
+              "image_url": "https://www.valimail.com/wp-content/uploads/2026/04/WhatIsDNSSOARecord-scaled.png",
+              "sort_order": 120,
+              "category_id": 142
+            },
+            {
+              "id": 581,
+              "section_id": 26,
+              "name": "SSH",
+              "definition": "**Secure Shell.**\n\nAn encrypted command-line terminal protocol operating over TCP port 22, serving as the secure replacement for unencrypted Telnet (TCP port 23).",
+              "image_url": "https://www.sectorlink.com/img/blog/ssh.jpg",
+              "sort_order": 121,
+              "category_id": 142
+            },
+            {
+              "id": 582,
+              "section_id": 26,
+              "name": "SSID",
+              "definition": "**Service Set Identifier.**\n\nThe human-readable name of the wireless network broadcasted to clients.",
+              "image_url": "https://i.ytimg.com/vi/8a7iNz14EcU/maxresdefault.jpg",
+              "sort_order": 122,
+              "category_id": 142
+            },
+            {
+              "id": 583,
+              "section_id": 26,
+              "name": "SSL",
+              "definition": "**Secure Sockets Layer.**\n\nUsed for browser-based web server communication.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgjJV2ADwJIiu9ObRGmB9WgBAFTeuvQrcHyoVY3zcnQkwXAlmkbiCP0fo&s=10",
+              "sort_order": 123,
+              "category_id": 142
+            },
+            {
+              "id": 584,
+              "section_id": 26,
+              "name": "SSO",
+              "definition": "**Single Sign-On.**\n\nAllowing a user to authenticate once per day to gain access to multiple authorized network resources without repeated logins.",
+              "image_url": "https://media.geeksforgeeks.org/wp-content/uploads/20200611114248/ssologin.png",
+              "sort_order": 124,
+              "category_id": 142
+            },
+            {
+              "id": 585,
+              "section_id": 26,
+              "name": "ST",
+              "definition": "**Straight Tip.**\n\nA bayonet-style connector that locks into place with a push and slight twist.",
+              "image_url": "https://cc-globaltech.com/wp-content/uploads/st.jpg",
+              "sort_order": 125,
+              "category_id": 142
+            },
+            {
+              "id": 586,
+              "section_id": 26,
+              "name": "STP",
+              "definition": "**Shielded Twisted Pair.**\n\nUnshielded Twisted Pair (UTP) is prone to electromagnetic interference (EMI), whereas Shielded Twisted Pair (STP) provides foil or braided shielding (with a grounding wire) to resist external noise. Damaged shields reintroduce interference.\n\nIn switching, STP also means Spanning Tree Protocol.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdEcMAfapUAFFCGx_TvNHOBTfGvufxMvcGGzEbQa6lyxWx_CfQyt58jxX0&s=10",
+              "sort_order": 126,
+              "category_id": 142
+            },
+            {
+              "id": 587,
+              "section_id": 26,
+              "name": "SVI",
+              "definition": "**Switch Virtual Interface.**\n\nA logical interface configured on a Layer 3 switch that enables routing functionality between different VLANs within the same hardware device.",
+              "image_url": "https://statics.mylandingpages.co/static/aaapycm22qmuab44/image/18064ddc91a440bd8c9cacf9f55e2cc5.webp",
+              "sort_order": 127,
+              "category_id": 142
+            },
+            {
+              "id": 588,
+              "section_id": 26,
+              "name": "TACACS+",
+              "definition": "**Terminal Access Controller Access-Control System Plus.**\n\nAn authentication protocol commonly utilized for administrative access control on network devices like routers and switches.",
+              "image_url": "https://instasafe.com/blog/content/images/2024/02/What-is-TACACS-Authentication.webp",
+              "sort_order": 128,
+              "category_id": 143
+            },
+            {
+              "id": 589,
+              "section_id": 26,
+              "name": "TCP",
+              "definition": "**Transmission Control Protocol.**\n\nA connection-oriented, reliable Layer 4 transport protocol that establishes formal handshakes, provides delivery acknowledgments, handles error recovery/retransmissions, and enforces flow control.",
+              "image_url": "https://www.a1.digital/uploads/Images/KnowledgeHub/16_A1-Digital-TCP-IP_Header_v2.jpg",
+              "sort_order": 129,
+              "category_id": 143
+            },
+            {
+              "id": 590,
+              "section_id": 26,
+              "name": "TFTP",
+              "definition": "**Trivial File Transfer Protocol.**\n\nA lightweight, unauthenticated protocol used for rapid file transfers, such as downloading configuration files onto VoIP devices.",
+              "image_url": "https://journal.jadaptive.com/wp-content/uploads/2024/03/tftp.jpg",
+              "sort_order": 130,
+              "category_id": 143
+            },
+            {
+              "id": 591,
+              "section_id": 26,
+              "name": "TLS",
+              "definition": "**Transport Layer Security.**\n\nEncrypt DNS traffic to prevent eavesdropping on queried hostnames. DoT sends queries over TCP port 853, while DoH encapsulates DNS queries inside standard encrypted HTTPS traffic (TCP port 443).",
+              "image_url": "https://www.cloudns.net/blog/wp-content/uploads/2023/04/DoT-and-DoH-1024x577.png",
+              "sort_order": 131,
+              "category_id": 143
+            },
+            {
+              "id": 592,
+              "section_id": 26,
+              "name": "TPC",
+              "definition": "**Transmit Power Control.**\n\nAllows access points to dynamically manage and lower client transmit power levels to optimize performance and prevent interference.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-bBfQx4wVN0KctxxFeT657PxMWsuizxnHVp4eMs10pXitWmh4EmCo_oE&s=10",
+              "sort_order": 132,
+              "category_id": 143
+            },
+            {
+              "id": 593,
+              "section_id": 26,
+              "name": "TTL",
+              "definition": "**Time to live.**\n\nA mechanism built into the IP packet header consisting of a hop limit counter. Each router that handles the packet decrements the TTL by 1. If the TTL reaches 0 before reaching the destination, the packet is dropped and an ICMP \"Time Exceeded\" message is sent back, preventing infinite routing loops.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDijC0oJaioLLfk9yWXg7PMeWE69pX-K1nedx-JoT--Hs6cZdkFVvb4hw&s=10",
+              "sort_order": 133,
+              "category_id": 143
+            },
+            {
+              "id": 594,
+              "section_id": 26,
+              "name": "TX",
+              "definition": "**Transmit.**\n\nReversing the transmit and receive fibers or wires results in a \"no link\" condition because data is sent into another transmitter instead of a receiver.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReKvCZAsQfLKLZjWlQc99PSNNU4YnkJxb0djjcmFegkGg1NZfbYX31R-g3&s=10",
+              "sort_order": 134,
+              "category_id": 143
+            },
+            {
+              "id": 595,
+              "section_id": 26,
+              "name": "TXT",
+              "definition": "**Text.**\n\nStores human-readable text data, frequently utilized for email security standards like SPF (Sender Policy Framework) and DKIM (DomainKeys Identified Mail) public keys.",
+              "image_url": "https://www.adobe.com/uk/acrobat/resources/document-files/text-files/media_1e2bc14683602dee9fc14b87fec22b249d2cf18a4.png?width=750&format=png&optimize=medium",
+              "sort_order": 135,
+              "category_id": 143
+            },
+            {
+              "id": 596,
+              "section_id": 26,
+              "name": "UDP",
+              "definition": "**User Datagram Protocol.**\n\nA connectionless, unreliable (no acknowledgments) Layer 4 transport protocol that transmits data quickly with minimal overhead and no session setup.",
+              "image_url": "https://www.emnify.com/hubfs/Title-udp.webp",
+              "sort_order": 136,
+              "category_id": 144
+            },
+            {
+              "id": 597,
+              "section_id": 26,
+              "name": "UPS",
+              "definition": "**Uninterruptible Power Supply.**\n\nProtects equipment against power outages, brownouts, and voltage surges by supplying temporary battery backup. Options range from standby/offline UPS units to line-interactive and online/double-conversion models.",
+              "image_url": "https://www.iqsdirectory.com/articles/power-supply/uninterruptible-power-supply/uninterruptible-power-supply.jpg",
+              "sort_order": 137,
+              "category_id": 144
+            },
+            {
+              "id": 598,
+              "section_id": 26,
+              "name": "URL",
+              "definition": "**Uniform Resource Locator.**\n\nEnables organizations to restrict web traffic by specifying individual URLs or broad content categories (such as hacking, auction, or travel sites) into allow lists and block lists.",
+              "image_url": "https://www.checkpoint.com/wp-content/uploads/url-filtering-floating-hero-image.png",
+              "sort_order": 138,
+              "category_id": 144
+            },
+            {
+              "id": 599,
+              "section_id": 26,
+              "name": "UTP",
+              "definition": "Unshielded Twisted Pair (UTP) is prone to electromagnetic interference (EMI), whereas Shielded Twisted Pair (STP) provides foil or braided shielding (with a grounding wire) to resist external noise. Damaged shields reintroduce interference.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdEcMAfapUAFFCGx_TvNHOBTfGvufxMvcGGzEbQa6lyxWx_CfQyt58jxX0&s=10",
+              "sort_order": 139,
+              "category_id": 144
+            },
+            {
+              "id": 600,
+              "section_id": 26,
+              "name": "VIP",
+              "definition": "**Virtual IP.**\n\nA shared virtual IP address assigned as the default gateway for client workstations. If the active primary router fails, the VIP and traffic routing seamlessly fail over to a standby router without requiring reconfiguration on end-user devices.",
+              "image_url": "https://as2.ftcdn.net/jpg/03/92/00/85/1000_F_392008533_QrGljlWQkUHoKpd902bUzZpr7FENGckW.jpg",
+              "sort_order": 140,
+              "category_id": 145
+            },
+            {
+              "id": 601,
+              "section_id": 26,
+              "name": "VLAN",
+              "definition": "**Virtual Local Area Network.**\n\nVLANs logically segment devices into separate broadcast domains on the same physical switch, identifying them by numbers (e.g., VLAN 1, 2, 3) rather than physical location. This eliminates the need for separate switches for distinct groups of devices.",
+              "image_url": "https://cdn.networkacademy.io/sites/default/files/2025-06/vlan-concept.gif",
+              "sort_order": 141,
+              "category_id": 145
+            },
+            {
+              "id": 602,
+              "section_id": 26,
+              "name": "VLSM",
+              "definition": "**Variable Length Subnet Masks.**\n\nAllows network administrators to customize subnet mask lengths per network segment rather than being locked into fixed classful boundaries. This enables precise allocation of host counts and network segments to match exact infrastructure requirements.",
+              "image_url": "https://cdn.networkacademy.io/sites/default/files/2023-03/what-is-vlsm.svg",
+              "sort_order": 142,
+              "category_id": 145
+            },
+            {
+              "id": 603,
+              "section_id": 26,
+              "name": "VPC",
+              "definition": "**Virtual private cloud.**\n\nA secure, isolated private network environment inside a cloud infrastructure where web servers, databases, load balancers, and virtual routers operate.",
+              "image_url": "https://www.logicmonitor.com/wp-content/uploads/2024/11/835_WhatisVPCinAWS_Socials_v1_Blog_1182x737.png",
+              "sort_order": 143,
+              "category_id": 145
+            },
+            {
+              "id": 604,
+              "section_id": 26,
+              "name": "VPN",
+              "definition": "**Virtual private network.**\n\nCreates a secure, encrypted tunnel over a public network (like the Internet), allowing remote users or branch offices to securely access a private network as if they were physically connected.",
+              "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLXe4T8Kcih9xxvVMcNBEiWTDcrGgv4OlYsMDER2UY489plJa_-nr_ZEr9&s=10",
+              "sort_order": 144,
+              "category_id": 145
+            },
+            {
+              "id": 605,
+              "section_id": 26,
+              "name": "WLC",
+              "definition": "**Wireless LAN Controller.**\n\nAvailable as a physical hardware appliance or a virtual instance. The centralized management brain for an enterprise wireless network.\n**Primary Function**: Manages, configures, provisions, and monitors dozens or thousands of lightweight access points from a single pane of glass.",
+              "image_url": "https://resource.fs.com/mall/mainImg/202509021604382bzxur.jpg.webp",
+              "sort_order": 145,
+              "category_id": 146
+            },
+            {
+              "id": 606,
+              "section_id": 26,
+              "name": "WPA2",
+              "definition": "**Wi-Fi Protected Access 2.**\n\nUses the AES cipher combined with CCMP for robust data confidentiality and message integrity.",
+              "image_url": "https://www.pandasecurity.com/en/mediacenter/src/uploads/2020/03/WPA2-icon.png",
+              "sort_order": 146,
+              "category_id": 146
+            },
+            {
+              "id": 607,
+              "section_id": 26,
+              "name": "WPA3",
+              "definition": "**Wi-Fi Protected Access 3.**\n\nThe modern standard utilizing GCMP (Galois Counter Mode Protocol) and AES for enhanced security, improved open-network data protection, and stronger resistance to offline brute-force attacks.",
+              "image_url": "https://image.pngaaa.com/436/5264436-middle.png",
+              "sort_order": 147,
+              "category_id": 146
+            },
+            {
+              "id": 608,
+              "section_id": 26,
+              "name": "XT",
+              "definition": "**Crosstalk.**\n\nSignal leakage between adjacent wire pairs. Measured as Near-End Crosstalk (NEXT) or Far-End Crosstalk (FEXT), and aggravated by untwisting wires too far during termination. Alien crosstalk refers to interference coming from neighboring cables.",
+              "image_url": "https://cabling.crxconec.com/Templates/pic/CRX-Blog-What%20is%20Alien%20Crosstalk.JPG?v=3636549e",
+              "sort_order": 148,
+              "category_id": 147
+            }
+          ]
+        }
+      ]
     }
   ]
 }

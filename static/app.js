@@ -12,6 +12,7 @@ const state = {
   quizTermsAll: [],
   quizMode: "term",
   quizRun: null,
+  termSort: localStorage.getItem("nplus-term-sort") === "appearance" ? "appearance" : "alpha",
 };
 
 const app = document.getElementById("app");
@@ -464,7 +465,10 @@ function renderSection() {
   const previous = place > 0 ? siblings[place - 1] : null;
   const next = place >= 0 && place < siblings.length - 1 ? siblings[place + 1] : null;
   const categories = data.categories || [];
-  const toc = categories.length
+  const groups = sectionGroups(data);
+  const toc = appearanceSort(data)
+    ? groups.filter((group) => group.category).map((group) => `<a href="#category-${group.category.id}">${esc(group.category.name)}</a>`).join("")
+    : categories.length
     ? categoryToc(categories)
     : terms.map((term) => `<a href="#term-${term.id}">${esc(term.name)}</a>`).join("");
   return `
@@ -484,7 +488,7 @@ function renderSection() {
     ${toc ? `<nav class="toc" aria-label="On this page"><div class="wrap">${toc}</div></nav>` : ""}
     <main class="wrap terms" id="terms">
       ${state.editing ? `<p class="form-help edit-note">Add categories, then add a subcategory under any category. Save each term after you edit it. Ctrl+B bolds selected words.</p>` : ""}
-      ${renderSectionBody(data)}
+      ${renderSectionBody(data, groups)}
     </main>
     <div class="wrap pager">
       ${previous ? `<a href="#/s/${previous.id}">← ${esc(previous.code)} ${esc(previous.title)}</a>` : ""}
@@ -563,7 +567,114 @@ function groupTerms(data) {
   return groups;
 }
 
-function renderSectionBody(data) {
+function acronymPage(data) {
+  return data?.section?.code === "6.1";
+}
+
+function appearanceSort(data) {
+  return acronymPage(data) && state.termSort === "appearance" && !state.editing;
+}
+
+function escapeReg(value) {
+  return String(value).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function mentionsAcronym(name, acronym) {
+  const flags = acronym.length <= 2 ? "" : "i";
+  const pattern = new RegExp(`(^|[^A-Za-z0-9])${escapeReg(acronym)}([^A-Za-z0-9]|$)`, flags);
+  return pattern.test(String(name || ""));
+}
+
+function courseSections() {
+  const book = state.tree?.chapters?.length ? state.tree : window.NETWORK_PLUS;
+  if (!book?.chapters) return [];
+  const chapters = [...book.chapters].sort((a, b) => (a.sort_order - b.sort_order) || (a.number - b.number));
+  const sections = [];
+  for (const chapter of chapters) {
+    if (Number(chapter.number) === 6) continue;
+    const list = [...(chapter.sections || [])].sort((a, b) => (
+      (a.sort_order - b.sort_order) || String(a.code).localeCompare(String(b.code), undefined, { numeric: true })
+    ));
+    for (const section of list) {
+      const terms = [...(section.terms || [])].sort((a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0));
+      sections.push({ code: section.code, title: section.title, terms });
+    }
+  }
+  return sections;
+}
+
+function appearancePlaces(terms) {
+  const pending = new Map(terms.map((term) => [term.name, term]));
+  const places = new Map();
+  let index = 0;
+  for (const section of courseSections()) {
+    for (const source of section.terms) {
+      for (const [name, term] of [...pending]) {
+        if (!mentionsAcronym(source.name, name)) continue;
+        places.set(term.id, { index, code: section.code, title: section.title });
+        pending.delete(name);
+      }
+      index += 1;
+    }
+  }
+  for (const term of pending.values()) {
+    places.set(term.id, { index, code: "", title: "Other" });
+    index += 1;
+  }
+  return places;
+}
+
+function groupByAppearance(data) {
+  const places = appearancePlaces(data.terms || []);
+  const ordered = [...(data.terms || [])].sort((a, b) => {
+    const left = places.get(a.id);
+    const right = places.get(b.id);
+    return (left?.index ?? 0) - (right?.index ?? 0) || a.name.localeCompare(b.name);
+  });
+  const groups = [];
+  for (const term of ordered) {
+    const place = places.get(term.id);
+    const key = place.code || "other";
+    let group = groups.find((item) => item.key === key);
+    if (!group) {
+      group = {
+        key,
+        category: {
+          id: `at-${key}`,
+          name: place.code ? `${place.code} ${place.title}` : "Other",
+          summary: "",
+        },
+        terms: [],
+        children: [],
+        index: groups.length,
+        siblingCount: 0,
+      };
+      groups.push(group);
+    }
+    group.terms.push(term);
+  }
+  for (const group of groups) group.siblingCount = groups.length;
+  return groups;
+}
+
+function sectionGroups(data) {
+  if (appearanceSort(data)) return groupByAppearance(data);
+  return groupTerms(data);
+}
+
+function renderSortBar(data) {
+  if (!acronymPage(data) || state.editing) return "";
+  const appearance = state.termSort === "appearance";
+  return `
+    <div class="sort-bar" role="group" aria-label="Sort acronyms">
+      <span>Sort</span>
+      <button type="button" class="sort-choice${appearance ? "" : " on"}" data-action="sort-terms" data-sort="alpha">Alphabetical</button>
+      <button type="button" class="sort-choice${appearance ? " on" : ""}" data-action="sort-terms" data-sort="appearance">Order of appearance</button>
+    </div>
+  `;
+}
+
+function renderSectionBody(data, groups = sectionGroups(data)) {
   const categories = data.categories || [];
   const terms = data.terms || [];
   const creator = state.editing ? renderCategoryCreator() : "";
@@ -574,8 +685,8 @@ function renderSectionBody(data) {
       : "This page has no terms yet. Turn on editing and add the first one.";
     return `${creator}<p class="empty">${empty}</p>${composer}`;
   }
-  const groups = groupTerms(data).map((group) => renderGroup(group, categories.length > 0)).join("");
-  return `${creator}${groups}${composer}`;
+  const list = groups.map((group) => renderGroup(group, categories.length > 0)).join("");
+  return `${renderSortBar(data)}${creator}${list}${composer}`;
 }
 
 function renderCategoryCreator() {
@@ -1018,6 +1129,12 @@ async function onClick(event) {
   if (action === "toggle-edit") {
     state.editing = !state.editing;
     localStorage.setItem("nplus-editing", state.editing ? "1" : "0");
+    render({ scroll: "keep" });
+    return;
+  }
+  if (action === "sort-terms") {
+    state.termSort = actionEl.dataset.sort === "appearance" ? "appearance" : "alpha";
+    localStorage.setItem("nplus-term-sort", state.termSort);
     render({ scroll: "keep" });
     return;
   }
