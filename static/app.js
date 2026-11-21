@@ -54,6 +54,37 @@ function paragraphs(text) {
   return blocks.map((part) => `<p>${richText(part)}</p>`).join("");
 }
 
+function acronymExpansion(definition) {
+  const match = String(definition || "").match(/^\*\*([^*]+)\*\*\.?/);
+  return match ? match[1].trim() : "";
+}
+
+function isAcronymTerm(term) {
+  if (term?.section_code === "6.1") return true;
+  const name = String(term?.name || "").trim();
+  if (!name || name.length > 24) return false;
+  return /^[A-Z0-9][A-Z0-9+\-/ ]*[A-Z0-9+]?$/.test(name);
+}
+
+/** Remove spelled-out titles and the answer word from quiz stems and choice text. */
+function scrubDefinition(definition, termName = "") {
+  let text = String(definition || "").trim();
+  text = text.replace(/^\*\*([^*]+)\*\*\.?\s*(?:\r?\n\r?\n|\r?\n|$)/, "").trim();
+  if (!termName) return text || String(definition || "").trim();
+  const tokens = [...new Set([termName, ...termName.split(/[\s/]+/)].filter((part) => part.length > 1))];
+  for (const token of tokens) {
+    const pattern = new RegExp(`(^|[^A-Za-z0-9])${token.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}([^A-Za-z0-9]|$)`, "gi");
+    text = text.replace(pattern, "$1…$2");
+  }
+  text = text.replace(/…+/g, "…").replace(/\s+/g, " ").trim();
+  return text;
+}
+
+function quizDefinitionStem(definition, termName = "") {
+  const scrubbed = scrubDefinition(definition, termName);
+  return scrubbed || "Use what you know about this topic.";
+}
+
 function toggleBold(field) {
   const start = field.selectionStart ?? 0;
   const end = field.selectionEnd ?? 0;
@@ -924,17 +955,23 @@ function renderQuizRun(route) {
   const percent = Math.round((step / total) * 100);
   const badgeParts = [];
   if (route.scope === "chapter") badgeParts.push(`${question.term.section_code} ${question.term.section_title}`);
-  if (question.term.category_name) {
+  if (question.term.section_code !== "6.1" && question.term.category_name) {
     badgeParts.push(question.term.parent_category_name
       ? `${question.term.parent_category_name} · ${question.term.category_name}`
       : question.term.category_name);
   }
   const badge = badgeParts.length ? `<span class="badge">${esc(badgeParts.join(" · "))}</span>` : "";
   let stem = "";
-  if (question.kind === "term") stem = `<p class="stem">${richText(question.term.definition)}</p>`;
+  if (question.kind === "term") {
+    stem = `<p class="stem">${richText(quizDefinitionStem(question.term.definition, question.term.name))}</p>`;
+  }
   if (question.kind === "definition") {
-    const image = safeUrl(question.term.image_url);
-    stem = `${image ? `<figure class="stem-figure"><img src="${esc(image)}" alt="" referrerpolicy="no-referrer"></figure>` : ""}<p class="stem">${esc(question.term.name)}</p>`;
+    if (question.expansion) {
+      stem = `<p class="stem">${esc(question.expansion)}</p>`;
+    } else {
+      const image = safeUrl(question.term.image_url);
+      stem = `${image ? `<figure class="stem-figure"><img src="${esc(image)}" alt="" referrerpolicy="no-referrer"></figure>` : ""}<p class="stem">${esc(question.term.name)}</p>`;
+    }
   }
   if (question.kind === "image") {
     stem = `<figure class="stem-figure"><img src="${esc(safeUrl(question.term.image_url))}" alt="" referrerpolicy="no-referrer"></figure>`;
@@ -1007,16 +1044,23 @@ function buildQuestions(terms, mode) {
       kind = kinds[Math.floor(Math.random() * kinds.length)];
     }
     const others = shuffle(pool.filter((item) => item.id !== term.id)).slice(0, 3);
-    const choices = shuffle([term, ...others]).map((item) => ({
-      id: item.id,
-      label: kind === "definition" ? item.definition : item.name,
-    }));
+    const acronym = isAcronymTerm(term);
+    const expansion = acronym ? acronymExpansion(term.definition) : "";
+    let choices;
+    if (kind === "definition" && acronym && expansion) {
+      choices = shuffle([term, ...others]).map((item) => ({ id: item.id, label: item.name }));
+    } else {
+      choices = shuffle([term, ...others]).map((item) => ({
+        id: item.id,
+        label: kind === "definition" ? scrubDefinition(item.definition, item.name) : item.name,
+      }));
+    }
     const prompts = {
-      term: "Which term matches this definition?",
-      definition: "Which definition matches this term?",
-      image: "Which term is this picture?",
+      term: acronym ? "Which acronym matches this description?" : "Which term matches this definition?",
+      definition: acronym && expansion ? "Which acronym stands for this phrase?" : "Which definition matches this term?",
+      image: acronym ? "Which acronym goes with this picture?" : "Which term is this picture?",
     };
-    return { kind, prompt: prompts[kind], term, choices };
+    return { kind, prompt: prompts[kind], term, choices, expansion: kind === "definition" ? expansion : "" };
   });
 }
 
