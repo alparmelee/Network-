@@ -13,6 +13,7 @@ const state = {
   quizMode: "term",
   quizRun: null,
   termSort: localStorage.getItem("nplus-term-sort") === "appearance" ? "appearance" : "alpha",
+  acronymBank: null,
 };
 
 const app = document.getElementById("app");
@@ -306,6 +307,7 @@ async function loadRoute(options = {}) {
     }
     if (token !== loadToken) return;
     if (route.name === "quiz") {
+      await ensureAcronymBank();
       const key = `${route.scope}:${route.id}`;
       const terms = route.scope === "section"
         ? state.sectionData.terms.map((term) => ({
@@ -634,6 +636,79 @@ function courseSections() {
   return sections;
 }
 
+function enrichAcronymTerms(terms) {
+  const places = appearancePlaces(terms);
+  return terms.map((term) => {
+    const place = places.get(term.id);
+    const code = place?.code || "";
+    return {
+      ...term,
+      section_code: term.section_code || "6.1",
+      section_title: term.section_title || "Acronyms",
+      acronym_chapter: code ? Number(code.split(".")[0]) : 0,
+      acronym_section_code: code,
+    };
+  });
+}
+
+async function ensureAcronymBank() {
+  if (state.acronymBank) return state.acronymBank;
+  const book = catalog();
+  if (book) {
+    const chapter = book.chapters.find((item) => Number(item.number) === 6);
+    const section = chapter?.sections?.find((item) => item.code === "6.1");
+    state.acronymBank = section ? enrichAcronymTerms(termsWithCategories(section)) : [];
+    return state.acronymBank;
+  }
+  const tree = state.tree || await api("/api/tree");
+  let sectionId = null;
+  for (const chapter of tree.chapters) {
+    if (Number(chapter.number) !== 6) continue;
+    sectionId = (chapter.sections || []).find((item) => item.code === "6.1")?.id;
+    break;
+  }
+  if (!sectionId) {
+    state.acronymBank = [];
+    return state.acronymBank;
+  }
+  const detail = await api(`/api/sections/${sectionId}`);
+  state.acronymBank = enrichAcronymTerms(detail.terms.map((term) => ({
+    ...term,
+    section_code: "6.1",
+    section_title: detail.section.title,
+  })));
+  return state.acronymBank;
+}
+
+function filterAcronyms(terms, chapter) {
+  if (!terms?.length) return [];
+  if (!chapter || chapter === "all") return terms;
+  return terms.filter((term) => term.acronym_chapter === Number(chapter));
+}
+
+function acronymChapterCounts(bank = []) {
+  const counts = { all: bank.length };
+  for (let number = 1; number <= 5; number += 1) {
+    counts[number] = bank.filter((term) => term.acronym_chapter === number).length;
+  }
+  return counts;
+}
+
+function isAcronymQuizRoute(route) {
+  if (route.name !== "quiz") return false;
+  if (route.scope === "section") return state.sectionData?.section?.code === "6.1";
+  if (route.scope === "chapter") return Number(state.chapterData?.number) === 6;
+  return false;
+}
+
+function chapterAcronymQuiz(route) {
+  return route.name === "quiz"
+    && route.scope === "chapter"
+    && state.chapterData
+    && Number(state.chapterData.number) >= 1
+    && Number(state.chapterData.number) <= 5;
+}
+
 function appearancePlaces(terms) {
   const pending = new Map(terms.map((term) => [term.name, term]));
   const places = new Map();
@@ -900,12 +975,14 @@ function quizSource(route) {
   }
   if (route.scope === "chapter" && state.chapterData) {
     const chapter = state.chapterData;
-    return {
+  return {
       back: "#/",
       backLabel: "Back to guides",
-      title: `Chapter ${chapter.number} quiz`,
+      title: Number(chapter.number) === 6 ? "Acronym quiz" : `Chapter ${chapter.number} quiz`,
       subtitle: chapter.title,
-      blurb: "Questions come from every term in this chapter.",
+      blurb: Number(chapter.number) === 6
+        ? "Pick all acronyms or one exam chapter, then choose how you want to be tested."
+        : "Study every term in this chapter, or drill only the acronyms that first show up here.",
     };
   }
   return null;
@@ -915,7 +992,7 @@ function renderQuiz(route) {
   const source = quizSource(route);
   if (!source) return `<div class="wrap"><p class="lede">Loading the quiz...</p></div>`;
   document.title = `${source.title} — Network+`;
-  const body = state.quizRun ? renderQuizRun(route) : renderQuizSetup(source);
+  const body = state.quizRun ? renderQuizRun(route) : renderQuizSetup(source, route);
   return `
     <div class="wrap quiz-wrap">
       <a class="back" href="${source.back}">${esc(source.backLabel)}</a>
@@ -926,14 +1003,49 @@ function renderQuiz(route) {
   `;
 }
 
-function renderQuizSetup(source) {
-  const count = state.quizTermsAll.length;
-  const images = state.quizTermsAll.filter((term) => safeUrl(term.image_url)).length;
+function renderQuizSetup(source, route) {
+  const counts = acronymChapterCounts(state.acronymBank || []);
+  let terms = state.quizTermsAll;
+  let poolHtml = "";
+  let scopeHtml = "";
+
+  if (chapterAcronymQuiz(route)) {
+    const chapter = state.chapterData.number;
+    const pool = document.querySelector("input[name='quiz-pool']:checked")?.value || "chapter";
+    const acronymCount = counts[chapter] || 0;
+    if (pool === "acronyms") terms = filterAcronyms(state.acronymBank, String(chapter));
+    poolHtml = `
+      <fieldset class="quiz-scope">
+        <legend>What to study</legend>
+        <label><input type="radio" name="quiz-pool" value="chapter" ${pool === "chapter" ? "checked" : ""}> All terms in this chapter (${state.quizTermsAll.length})</label>
+        <label><input type="radio" name="quiz-pool" value="acronyms" ${pool === "acronyms" ? "checked" : ""} ${acronymCount < 2 ? "disabled" : ""}> Acronyms from this chapter (${acronymCount})</label>
+      </fieldset>
+    `;
+  }
+
+  if (isAcronymQuizRoute(route)) {
+    const filter = document.querySelector("input[name='quiz-acronym-chapter']:checked")?.value || "all";
+    terms = filterAcronyms(state.acronymBank, filter);
+    const chapters = state.tree?.chapters || catalog()?.chapters || [];
+    const options = [`<label><input type="radio" name="quiz-acronym-chapter" value="all" ${filter === "all" ? "checked" : ""}> All chapters (${counts.all})</label>`];
+    for (let number = 1; number <= 5; number += 1) {
+      const meta = chapters.find((item) => Number(item.number) === number);
+      const title = meta?.title ? `Chapter ${number} · ${meta.title}` : `Chapter ${number}`;
+      const count = counts[number] || 0;
+      options.push(`<label><input type="radio" name="quiz-acronym-chapter" value="${number}" ${filter === String(number) ? "checked" : ""} ${count < 2 ? "disabled" : ""}> ${esc(title)} (${count})</label>`);
+    }
+    scopeHtml = `<fieldset class="quiz-scope"><legend>Which acronyms</legend>${options.join("")}</fieldset>`;
+  }
+
+  const count = terms.length;
+  const images = terms.filter((term) => safeUrl(term.image_url)).length;
   return `
     <div class="card">
       <h2>Choose a quiz</h2>
       <p class="subtitle">${esc(source.blurb)} ${esc(termCountLabel(count))} ready. ${images} with a picture.</p>
       ${count < 2 ? `<p class="banner">Add at least two terms before this quiz can offer a wrong answer.</p>` : `
+        ${poolHtml}
+        ${scopeHtml}
         <div class="mode-list">
           <label><input type="radio" name="quiz-mode" value="term" checked> Read the definition, pick the term</label>
           <label><input type="radio" name="quiz-mode" value="definition"> See the term, pick the definition</label>
@@ -954,7 +1066,11 @@ function renderQuizRun(route) {
   const step = run.revealed ? run.index + 1 : run.index;
   const percent = Math.round((step / total) * 100);
   const badgeParts = [];
-  if (route.scope === "chapter") badgeParts.push(`${question.term.section_code} ${question.term.section_title}`);
+  if (route.scope === "chapter" && question.term.section_code !== "6.1") {
+    badgeParts.push(`${question.term.section_code} ${question.term.section_title}`);
+  } else if (question.term.section_code === "6.1" && question.term.acronym_section_code) {
+    badgeParts.push(`First seen in ${question.term.acronym_section_code}`);
+  }
   if (question.term.section_code !== "6.1" && question.term.category_name) {
     badgeParts.push(question.term.parent_category_name
       ? `${question.term.parent_category_name} · ${question.term.category_name}`
@@ -1307,8 +1423,17 @@ async function onClick(event) {
     return;
   }
   if (action === "start-quiz") {
+    const route = parseHash();
     const selected = actionEl.dataset.mode || document.querySelector("input[name='quiz-mode']:checked")?.value || "term";
-    beginQuiz(selected, state.quizTermsAll);
+    let terms = state.quizTermsAll;
+    if (chapterAcronymQuiz(route) && document.querySelector("input[name='quiz-pool']:checked")?.value === "acronyms") {
+      terms = filterAcronyms(state.acronymBank, String(state.chapterData.number));
+    }
+    if (isAcronymQuizRoute(route)) {
+      const filter = document.querySelector("input[name='quiz-acronym-chapter']:checked")?.value || "all";
+      terms = filterAcronyms(state.acronymBank, filter);
+    }
+    beginQuiz(selected, terms);
     return;
   }
   if (action === "practice-missed") {
@@ -1492,6 +1617,10 @@ document.getElementById("restore-file").addEventListener("change", async (event)
 app.addEventListener("click", onClick);
 app.addEventListener("submit", onSubmit);
 app.addEventListener("input", onInput);
+app.addEventListener("change", (event) => {
+  if (!event.target.matches("input[name='quiz-pool'], input[name='quiz-acronym-chapter']")) return;
+  if (parseHash().name === "quiz" && !state.quizRun) render({ scroll: "keep" });
+});
 app.addEventListener("error", (event) => {
   if (event.target.tagName === "IMG") event.target.closest(".visual, .preview, .stem-figure")?.classList.add("broken");
 }, true);
@@ -1500,6 +1629,7 @@ document.addEventListener("keydown", onKey);
 window.addEventListener("hashchange", () => {
   state.quizKey = "";
   state.quizRun = null;
+  state.acronymBank = null;
   state.drafts = {};
   loadRoute({ scroll: "top" });
 });

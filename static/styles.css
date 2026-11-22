@@ -446,6 +446,30 @@ form.term { margin: 0; }
   box-shadow: 0 10px 30px rgba(16, 32, 51, 0.05);
 }
 .card h2 { margin: 0 0 0.8rem; font-size: 1.45rem; }
+.quiz-scope {
+  border: 0;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+.quiz-scope legend {
+  margin: 0 0 0.45rem;
+  padding: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.quiz-scope label {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  padding: 0.7rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fbfcfe;
+  cursor: pointer;
+}
 .mode-list { display: grid; gap: 0.45rem; margin: 0.2rem 0 1rem; }
 .mode-list label {
   display: flex;
